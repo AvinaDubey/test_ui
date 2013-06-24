@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowTitle("Test project");
     this->setWindowIcon(QIcon(":new/images/office_btn.png"));
-
+    // Setup the Group Boxes
     setuiforgroupbox1();
     setuiforgroupbox2();
     setuiforgroupbox3();
