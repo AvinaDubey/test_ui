@@ -23,7 +23,7 @@ class MainWindow;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-    
+
 public:
     explicit MainWindow(QWidget *parent = 0);
 
@@ -67,7 +67,7 @@ public:
     QWidget *scrollAreaWidgetContents;
 
     ~MainWindow();
-    
+
 private:
     Ui::MainWindow *ui;
 };

@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QGLWidget>
+#include "glwidget.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -9,18 +9,17 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowTitle("Test project");
     this->setWindowIcon(QIcon(":new/images/office_btn.png"));
-    // Setup the Group Boxes
+
     setuiforgroupbox1();
     setuiforgroupbox2();
     setuiforgroupbox3();
     setuiforgroupbox4();
     setuiforgroupbox5();
 
-    QGLWidget *glWidget = new QGLWidget;
+   // QGLWidget *glWidget = new QGLWidget;
+    glwidget *scene = new glwidget;
     QVBoxLayout *glLayout = new QVBoxLayout;
-
-
-    glLayout->addWidget(glWidget);
+    glLayout->addWidget(scene);
 
     ui->widget->setLayout(glLayout);
 
